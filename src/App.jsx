@@ -38,7 +38,7 @@ function App() {
       >
         <div className="container mx-auto px-6 py-8 max-w-4xl bg-gradient-to-r from-gray-900 to-black shadow-lg rounded-lg">
           <div className="flex flex-col gap-6 sm:flex-row justify-between items-center">
-            <h1 className="font-bold text-3xl text-white">Portfolio</h1>
+            <h1 className="font-bold text-3xl text-white">Portfolio.</h1>
             <ul className="flex gap-8">
               <li>
                 <a
@@ -72,8 +72,8 @@ function App() {
         {/* Intro/Banner section */}
         <section>
           <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
-            <div>
-              <h2 className="font-bold text-2xl md:mt-0 mt-1 md:text-4xl">
+            <div className="sm:mt-0 mt-12">
+              <h2 className="font-bold text-2xl  md:text-4xl">
                 Hello, I'm Ashfaq Ahmad,
               </h2>
               <div>
@@ -81,7 +81,7 @@ function App() {
                   Front-End Developer
                 </h2>
               </div>
-              <div >
+              <div>
                 <p className="mt-4 text-gray-400 leading-7">
                   Front-End Developer with over a year of experience at{" "}
                   <span className="font-semibold text-white">
