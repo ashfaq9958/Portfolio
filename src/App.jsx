@@ -1,20 +1,15 @@
 import "./App.css";
-import Porfile from "./assets/Photo.png";
 import Project1 from "./assets/inspecthiscar.png";
 import Project2 from "./assets/project_2.png";
-import Project3 from "./assets/project3.png";
-import Project4 from "./assets/project4.png";
 import P_1 from "./assets/p_1.png";
 import p_2 from "./assets/p_2.png";
-import pot from "./assets/port.png"
+import pot from "./assets/port.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
-// import { Carousel } from "react-responsive-carousel";
 import Carousel from "react-material-ui-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 function App() {
   const [scrolling, setScrolling] = useState(false);
 
@@ -127,7 +122,7 @@ function App() {
                       />
                     </svg>
                     <a
-                      href="/public/resume.pdf"
+                      href="/resume.pdf"
                       download="Ashfaq_Ahmad.pdf"
                       className="no-underline"
                     >
@@ -137,14 +132,7 @@ function App() {
                 </button>
               </div>
             </div>
-            <div className="relative">
-              {/* <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
-                <img
-                  src={Porfile}
-                  className="relative z-10 w-[280px] m-auto sm:w-[600px]"
-                />
-              </div> */}
-            </div>
+            <div className="relative"></div>
           </div>
         </section>
         {/* Projects section */}
@@ -217,7 +205,9 @@ function App() {
                 </p>
                 <div className="flex  gap-4 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
+                    <a href="https://click-connect.vercel.app/" target="_blank">
+                      Live preview
+                    </a>
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                     Checkout github
@@ -235,7 +225,12 @@ function App() {
                 </p>
                 <div className="flex gap-2 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
+                    <a
+                      href="https://ashfaq-portfolioo.netlify.app/"
+                      target="_blank"
+                    >
+                      Live preview
+                    </a>
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                     Checkout github
@@ -324,18 +319,6 @@ function App() {
               Additional Technologies and Skills
             </h2>
             <div className="flex flex-wrap justify-center gap-8 w-full">
-              {/* <div className="w-40 text-center">
-                <p className="font-bold text-lg relative inline-block">
-                  <span className="absolute -left-6 top-2 w-4 h-4 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-full"></span>
-                  Git
-                </p>
-              </div> */}
-              {/* <div className="w-40 text-center">
-                <p className="font-bold text-lg relative inline-block">
-                  <span className="absolute -left-6 top-2 w-4 h-4 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-full"></span>
-                  GitHub
-                </p>
-              </div> */}
               <div className="w-40 text-center">
                 <p className="font-bold text-lg relative inline-block">
                   <span className="absolute -left-6 top-2 w-4 h-4 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-full"></span>
@@ -360,12 +343,6 @@ function App() {
                   Swagger
                 </p>
               </div>
-              {/* <div className="w-40 text-center">
-                <p className="font-bold text-lg relative inline-block">
-                  <span className="absolute -left-6 top-2 w-4 h-4 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-full"></span>
-                  Redux Toolkit
-                </p>
-              </div> */}
             </div>
           </div>
         </section>
@@ -377,7 +354,9 @@ function App() {
               <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2023</h3>
                 <p>
-                I began my internship as a Front-End Developer at Sofyrus Technologies in May 2023. I am now employed full-time with the company.
+                  I began my internship as a Front-End Developer at Sofyrus
+                  Technologies in May 2023. I am now employed full-time with the
+                  company.
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
@@ -388,18 +367,12 @@ function App() {
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
-                <p>
-                  Became more interested in IT and decided to try programming.
-                  Underwent Java course and made a project.
-                </p>
+                <h3 className="absolute left-0 text-lg font-semibold">2016</h3>
+                <p>I have completed my Senior Secondary School from Aligarh</p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2013</h3>
-                <p>
-                  I completed my secondary education at Iqra Public School in
-                  Aligarh.
-                </p>
+                <p>I have completed my Secondary Education from Aligarh.</p>
               </div>
             </div>
           </div>
