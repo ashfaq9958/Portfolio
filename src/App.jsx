@@ -318,7 +318,7 @@ function App() {
         <section className="py-14 ">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold  mb-10">
-              Additional Technologies and Skills
+              Additional Technologies & Skills
             </h2>
             <div className="flex flex-wrap justify-center gap-8 w-full">
               <div className="w-40 text-center">
