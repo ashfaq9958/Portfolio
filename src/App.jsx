@@ -388,18 +388,24 @@ function App() {
           <div>
             <ul className="flex gap-4">
               <li>
+                <a
+                  href="https://www.linkedin.com/in/ashfaqahmad99/"
+                  target="_blank"
+                >
+                  <img src={LinkedIn} className="w-5 cursor-pointer" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/yusufkhan.845/"
+                  target="_blank"
+                >
+                  <img src={Instagram} className="w-5 cursor-pointer" />
+                </a>
+              </li>
+              <li>
                 <a>
                   <img src={Facebook} className="w-5" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img src={LinkedIn} className="w-5" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img src={Instagram} className="w-5" />
                 </a>
               </li>
             </ul>
