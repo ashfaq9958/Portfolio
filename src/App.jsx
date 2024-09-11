@@ -36,39 +36,35 @@ function App() {
         }  fixed left-0 right-0 top-0 z-20`}
         id="home"
       >
-        <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
-          <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
-            <div>
-              <h1 className="font-bold text-2xl">Portfolio</h1>
-            </div>
-            <div>
-              <ul className="flex gap-10">
-                <li>
-                  <a
-                    href="#projects"
-                    className="text-gray-400 hover:text-white cursor-pointer"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#technologies"
-                    className="text-gray-400 hover:text-white cursor-pointer"
-                  >
-                    Technologies
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#aboutme"
-                    className="text-gray-400 hover:text-white cursor-pointer"
-                  >
-                    About me
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div className="container mx-auto px-6 py-8 max-w-4xl bg-gradient-to-r from-gray-900 to-black shadow-lg rounded-lg">
+          <div className="flex flex-col gap-6 sm:flex-row justify-between items-center">
+            <h1 className="font-bold text-3xl text-white">Portfolio</h1>
+            <ul className="flex gap-8">
+              <li>
+                <a
+                  href="#projects"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 ease-in-out"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#technologies"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 ease-in-out"
+                >
+                  Technologies
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#aboutme"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 ease-in-out"
+                >
+                  About Me
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
@@ -85,7 +81,7 @@ function App() {
                   Front-End Developer
                 </h2>
               </div>
-              <div>
+              <div >
                 <p className="mt-4 text-gray-400 leading-7">
                   Front-End Developer with over a year of experience at{" "}
                   <span className="font-semibold text-white">
@@ -318,7 +314,7 @@ function App() {
         <section className="py-14 ">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold  mb-10">
-              Additional Technologies & Skills
+              Additional Technologies
             </h2>
             <div className="flex flex-wrap justify-center gap-8 w-full">
               <div className="w-40 text-center">
