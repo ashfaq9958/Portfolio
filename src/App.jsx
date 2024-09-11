@@ -135,7 +135,7 @@ function App() {
         </section>
         {/* Projects section */}
         <section id="projects">
-          <div className="container m-auto px-4 sm:py-12">
+          <div className="container mx-auto px-4 sm:py-12">
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
@@ -215,11 +215,15 @@ function App() {
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={pot} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                  Website redesign for The Venus project
+                  Responsive React Portfolio with Vite
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for The Venus project. HTML5, CSS3
-                  (SCSS)
+                  This portfolio, developed using React and Vite, showcases my
+                  front-end development skills with a focus on modern,
+                  responsive design. Leveraging Vite for optimal build
+                  performance and Tailwind CSS for a sleek and adaptive layout,
+                  this portfolio reflects my commitment to creating
+                  high-quality, user-friendly web applications.vices
                 </p>
                 <div className="flex gap-2 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
