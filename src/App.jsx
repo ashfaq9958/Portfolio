@@ -77,7 +77,7 @@ function App() {
         <section>
           <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
             <div>
-              <h2 className="font-bold text-base md:mt-0 mt-1 md:text-4xl">
+              <h2 className="font-bold text-3xl md:mt-0 mt-1 md:text-4xl">
                 Hello, I'm Ashfaq Ahmad,
               </h2>
               <div>
