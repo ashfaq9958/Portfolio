@@ -4,6 +4,7 @@ import Project2 from "./assets/project_2.png";
 import P_1 from "./assets/p_1.png";
 import p_2 from "./assets/p_2.png";
 import pot from "./assets/port.png";
+import project3 from "./assets/OMS.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -83,7 +84,7 @@ function App() {
               </div>
               <div>
                 <p className="mt-4 text-gray-400 leading-7">
-                  Front-End Developer with over a year of experience at{" "}
+                  Front-End Developer with 1.5+ year of experience at{" "}
                   <span className="font-semibold text-white">
                     Sofyrus Technologies
                   </span>
@@ -120,8 +121,8 @@ function App() {
                       />
                     </svg>
                     <a
-                      href="/resume.pdf"
-                      download="Ashfaq_Ahmad.pdf"
+                      href="/public/Ashfaq-Ahmad.Resume.pdf"
+                      download="Ashfaq_Ahmad_Resume.pdf"
                       className="no-underline"
                     >
                       Download Resume
@@ -137,94 +138,177 @@ function App() {
         <section id="projects">
           <div className="container mx-auto px-4 sm:py-12">
             <h2 className="text-2xl font-semibold">Projects</h2>
-            <div className="flex flex-col sm:flex-row gap-10 mt-11">
-              <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <Carousel>
-                  <img src={Project1} className="w-full h-[200px] rounded-sm" />
+            <div className="flex flex-col sm:flex-row gap-6 mt-8 sm:mt-10">
+              {/* Project Card 1 */}
+              <div className="border border-gray-300 rounded-lg p-5 flex-1 flex flex-col justify-between shadow-md">
+                <Carousel indicators={false}>
+                  <img
+                    src={P_1}
+                    alt="E-commerce Project"
+                    className="w-full h-[200px] object-contain"
+                  />
+                  <img
+                    src={p_2}
+                    alt="E-commerce Project"
+                    className="w-full h-[200px] object-contain"
+                  />
                 </Carousel>
-                <h3 className="text-2xl font-semibold mt-8">
-                  Inspect This Car landing page
+                <h3 className="text-xl font-semibold mt-6">
+                  Click & Collect (E-commerce)
                 </h3>
-                <p className="text-gray-400 text-sm mt-2">
-                  This project is for a Canadian client and involves a booking
-                  system for car inspections. It includes three modules:
-                  Customer, Garage Admin, and Super Admin. I used Tailwind CSS
-                  for styling, React Core UI library for components, React
-                  Router DOM for navigation, Axios for API calls, and Strapi CMS
-                  for the blog section.
-                </p>
-                <div className="flex mt-[80px] gap-2">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    <a href="https://inspectthiscar.com/" target="_blank">
-                      Live preview
-                    </a>
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
-                  </button>
+                <ul className="mt-3 ml-4 space-y-1 text-sm text-gray-500 list-disc leading-relaxed">
+                  <li>
+                    Responsive Design: Mobile-first approach with a seamless
+                    user experience across devices.
+                  </li>
+                  <li>
+                    Product Pages: Dynamic listing and filtering of products.
+                  </li>
+                  <li>
+                    Cart & Checkout: Add to cart, remove, and secure checkout
+                    process.
+                  </li>
+                  <li>
+                    UI/UX: Modern, attractive, and professional interface with
+                    animations and hover effects.
+                  </li>
+                </ul>
+                <div className="flex mt-6 sm:mt-10 gap-3">
+                  <a
+                    href="https://click-connect.vercel.app/"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 to-cyan-500 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 text-center"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    href="https://github.com/ashfaq9958/click-collect"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 border border-gray-300 rounded-full hover:border-blue-500 hover:text-blue-500 text-center"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
-              <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project2} className="w-full h-[200px]" />
-                <h3 className="text-2xl font-semibold mt-8">
-                  Click & Connect store landing page
+
+              {/* Project Card 1 */}
+              <div className="border border-gray-300 rounded-lg p-5 flex-1 flex flex-col justify-between shadow-md">
+                <>
+                  <img
+                    src={Project1}
+                    className="w-full h-[200px] object-contain"
+                    alt="Inspect This Car"
+                  />
+                </>
+                <h3 className="text-xl font-semibold mt-6">
+                  Inspect This Car Landing Page (ITC)
                 </h3>
-                <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for online store of designer
-                  furniture. HTML5, CSS3 (SCSS) Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Tenetur aut et necessitatibus
-                  aperiam architecto quasi recusandae ut id nulla numquam! Lorem
-                  ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                  officia alias mollitia dicta neque possimus qui lo
-                </p>
-                <div className="flex gap-2 mt-12  ">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
-                  </button>
+                <ul className="mt-3 ml-4 space-y-1 text-sm text-gray-500 list-disc leading-relaxed">
+                  <li>
+                    Project Overview: Developed for a Canadian client featuring
+                    a car inspection booking system.
+                  </li>
+                  <li>Modules Included:</li>
+                  <ul className="mt-2 ml-5 space-y-1 text-sm text-gray-500 list-disc leading-relaxed">
+                    <li>Tailwind CSS: For styling the user interface.</li>
+                    <li>React Core UI: For reusable components.</li>
+                    <li>Axios: For handling API requests and data fetching.</li>
+                    <li>
+                      React Router DOM: For seamless navigation between pages.
+                    </li>
+                  </ul>
+                </ul>
+                <div className="flex mt-6 sm:mt-10 gap-3">
+                  <a
+                    href="https://inspectthiscar.com/"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 to-cyan-500 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 text-center"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    href="https://github.com/ashfaq9958/inspect-this-car"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 border border-gray-300 rounded-full hover:border-blue-500 hover:text-blue-500 text-center"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
+
+            {/* Project 3 & 4  */}
+
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
-              <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <Carousel>
-                  <img src={P_1} alt="" className=" rounded-sm" />
-                  <img src={p_2} alt="" className=" rounded-sm" />
-                </Carousel>
-                {/* <img src={Project3} className="w-full h-auto" /> */}
-                <h3 className="text-2xl font-semibold mt-8">
-                  Landing page for front-end developer
+              <div className="border border-gray-300 rounded-lg p-5 flex-1 flex flex-col justify-between shadow-md">
+                <>
+                  <img
+                    src={project3}
+                    alt="E-commerce Project"
+                    className="w-full  object-contain "
+                  />
+                </>
+                <h3 className="text-xl font-semibold mt-6">
+                  Outsourcing Management System (OMS)
                 </h3>
-                <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for landing page for front-end
-                  developer. HTML5, CSS3 (SCSS).
-                </p>
-                <div className="flex  gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    <a href="https://click-connect.vercel.app/" target="_blank">
-                      Live preview
-                    </a>
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
-                  </button>
+                <ul className="mt-3 ml-4 space-y-1 text-sm text-gray-500 list-disc leading-relaxed">
+                  <li>
+                    Developed an ”OMS” for a Riyadh-based client, enhancing
+                    operational efficiency and record management.
+                  </li>
+                  <li>
+                    Enabled super admins to manage employee services, including
+                    iqama, visa, health insurance, and payroll options.
+                  </li>
+                  <li>
+                    Provided a system for employees to request services,
+                    streamlining the process and improving accessibility.
+                  </li>
+                  <li>
+                    Implemented tracking of employee records, including
+                    expiration dates for visas, iqamas, and health insurance.
+                  </li>
+                </ul>
+                <div className="flex mt-6 sm:mt-10 gap-3">
+                  <a
+                    href="https://oms.sofyrus.com/login"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 to-cyan-500 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 text-center"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    // href="https://github.com/ashfaq9958/click-collect"
+                    target="_blank"
+                    className="flex-1 text-sm py-3 border border-gray-300 rounded-full hover:border-blue-500 hover:text-blue-500 text-center"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
-              <div className="border border-gray-500 rounded-md p-5 flex-1">
+              <div className="border border-gray-300 rounded-lg p-5 flex-1 flex flex-col justify-between shadow-md">
                 <img src={pot} className="w-full h-auto" />
-                <h3 className="text-2xl font-semibold mt-8">
+                <h3 className="text-xl font-semibold mt-6">
                   Responsive React Portfolio with Vite
                 </h3>
-                <p className="text-gray-400 text-sm mt-2">
-                  This portfolio, developed using React and Vite, showcases my
-                  front-end development skills with a focus on modern,
-                  responsive design. Leveraging Vite for optimal build
-                  performance and Tailwind CSS for a sleek and adaptive layout,
-                  this portfolio reflects my commitment to creating
-                  high-quality, user-friendly web applications.vices
-                </p>
+                <ul className="mt-3 ml-4 space-y-1 text-sm text-gray-500 list-disc leading-relaxed">
+                  <li>
+                    Developed a modern and responsive portfolio using React and
+                    Vite to demonstrate front-end development expertise.
+                  </li>
+                  <li>
+                    Utilized Vite for its fast build performance and efficient
+                    development experience.
+                  </li>
+                  <li>
+                    Implemented Tailwind CSS to create a sleek, adaptive, and
+                    visually appealing layout.
+                  </li>
+                  <li>
+                    Focused on delivering a high-quality, user-friendly web
+                    application with clean and efficient code.
+                  </li>
+                </ul>
                 <div className="flex gap-2 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                     <a
@@ -235,7 +319,9 @@ function App() {
                     </a>
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
+                    <a href="https://github.com/ashfaq9958/Portfolio">
+                      Checkout github
+                    </a>
                   </button>
                 </div>
               </div>
